@@ -9,3 +9,15 @@ This project provides a mathematical and computational approach to finding the V
 where c is the normal vector and d is the threshold value.
 
 # Problem Statement
+
+Given two distinct points a,b ∈ R^n, the goal is to find the half-space that contains all points closer to a than to b. Mathematically, we define the region as :
+
+        S = {x ∈ R^n | ||x - a||2 <= ||x - b||2}
+
+Using algebraic manipulation, this can be rewritten in the linear form as :
+
+        2(b - a)^Tx <= b^Tb - a^Ta
+
+This confirms that the set of points forms a half-space, which is a convex region.
+
+# Methodology
