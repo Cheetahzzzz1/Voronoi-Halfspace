@@ -21,3 +21,45 @@ Using algebraic manipulation, this can be rewritten in the linear form as :
 This confirms that the set of points forms a half-space, which is a convex region.
 
 # Methodology
+
+<ins> (a) Compute the Normal Vector </ins>
+
+The normal vector for the half-space equation is given by :
+
+        c = 2(b - a)
+
+<ins> (b) Compute the Threshold Value </ins>
+
+The thrshold value is given by :
+
+        d = b^Tb - a^Ta
+
+<ins> (c) Implementation in Python </ins>
+
+1. Define two points a and b in R^n.
+
+2. Compute the normal vector c using the formula given above.
+
+3. Compute the threshold value d using the formula given above.
+
+4. Display the final half-space equation.
+
+# Dependencies
+
+1. Python 3
+
+2. NumPy
+
+3. Pandas
+
+# Usage
+
+1. Run the provided Python script in any Python environment.
+
+2. Modify the values of a and b to compute different half-spaces.
+
+3. The output will display the normal vector, threshold and half-space equation.
+
+# Conclusion
+
+This project successfully determines the Voronoi half-space separating two points using mathematical derivation and Python computation. The result confirms that the set of points forms a convex half-space, as expected.
